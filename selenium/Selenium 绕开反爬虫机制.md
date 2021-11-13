@@ -1,4 +1,4 @@
-1、mitproxy 拦截请求 √
+## 1、mitproxy 拦截请求 √
 
 本质上就是在响应中利用 mitproxy 将包含的 webdriver 的 js 中的关键字替换成其他的字符
 1. 给本机设置代理 ip 127.0.0.1 端口 8001（为了让所有流量走 mitmproxy）具体方法请百度。
@@ -6,6 +6,7 @@
 
 windows：
 `mitmdump -p 8001`
+
 3. 打开 chrome 的开发者工具，查各个.js 文件，是否存在 driver 字样，最终找到需要的.js 文件。
 
 4. 干扰脚本
@@ -23,7 +24,8 @@ def response(flow):
 
 5. 退出刚才的 mitmproxy 状态，重新用命令行启动 mitmproxy 干扰脚本 监听 8001 端口的请求与响应。
 mitmdump -s DriverPass.py -p 8001
-2、修改源码
+
+## 2、修改源码
 
 修改 js/call_function.js,129 行。
 ```js
@@ -46,12 +48,13 @@ function getPageCache(opt_doc) {
 ```
 经测试似乎已失效，可能由于版本迭代问题。
 
-3、手动打开跑程序√
+## 3、手动打开跑程序√
 
 cmd 运行命令
 chrome.exe --remote-debugging-port=9222
 打开一个浏览器，然后 py 代码里
 chrome_options.add_experimental_option("debuggerAddress", "127.0.0.1:9222")
-4、换 V63 之前的 chrome 与 driver
+
+## 4、换 V63 之前的 chrome 与 driver
 
 (似乎也是个好方法但是没有尝试）
