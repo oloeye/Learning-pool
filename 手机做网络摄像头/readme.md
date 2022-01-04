@@ -2,6 +2,7 @@
 网上查找，发现一款比较好的app.  支持搭建。  那就是 ip-webcam，能访问谷歌商店的用户可以直接在商店内搜索 “ip-webcam” 下载即可，对于无法访问的用户可以到 https://www.appsapk.com/ip-webcam/ 进行下载。
 
 打开后里面大概这样子：
+
 ![](https://www.gcssloop.com/assets/gebug/07-internet-ip-webcam/webcam-show.png)
 
 如果是再公网，可以设置一个账号密码，不然很不安全。但是如果只是需要在局域网使用的话，账号密码可以留空
@@ -10,6 +11,7 @@
 
 
 在设置完成后，翻到最后面一条，直接点击开启服务器即可
+
 ![](https://www.gcssloop.com/assets/gebug/07-internet-ip-webcam/webcam-start.png)
 
 在服务开启后，会在界面上显示视频的连接地址，如下
