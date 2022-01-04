@@ -13,9 +13,9 @@
 ![](https://www.gcssloop.com/assets/gebug/07-internet-ip-webcam/webcam-start.png)
 
 在服务开启后，会在界面上显示视频的连接地址，如下
-![](oloeye/Learning-pool/手机做网络摄像头/imgs/202201050111102.jpg)  
-![](oloeye/Learning-pool/手机做网络摄像头/imgs/20220105011110.jpg)  
-![](oloeye/Learning-pool/手机做网络摄像头/imgs/202201050111101.jpg)  
+![](imgs/202201050111102.jpg)  
+![](imgs/20220105011110.jpg)  
+![](imgs/202201050111101.jpg)  
 
 
 python 代码获取直播画面
